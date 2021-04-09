@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":prHourlyLimitNone"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "pycqa/pylint"
+      ],
+      "matchManagers": [
+        "pre-commit"
+      ],
+      "versioning": "regex:^pylint-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
+    }
+  ]
+}

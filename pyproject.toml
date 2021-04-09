@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "renovate-regex-versioning-pylint"
+version = "0.1.0"
+description = "Testing regex versioning on pylint with Renovate Bot"
+authors = ["Mikkel Mondrup Kristensen <mikkel@tdx.dk>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pre-commit = "^2.12.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
